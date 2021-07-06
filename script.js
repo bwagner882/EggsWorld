@@ -8,7 +8,7 @@ ele.innerHTML = "What's up??";
 const getJoke = () =>{
     let url = 'https://v2.jokeapi.dev/joke/';
     let endpoint = 'Miscellaneous,Pun,Christmas';
-    let params = '?format=json&blacklistFlags=sexist,racist,nsfw&type=single';
+    let params = '?format=json&blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single';
     let fullURL = `${url}${endpoint}${params}`;
     console.log(fullURL);
     fetch(fullURL, {cache: 'no-cache'}).then(response =>{
